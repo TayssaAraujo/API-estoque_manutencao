@@ -7,7 +7,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('myflix', '0001_initial'),
+        ('estoque_manutencao', '0001_initial'),
     ]
 
     operations = [
@@ -15,8 +15,8 @@ class Migration(migrations.Migration):
             name='Lista',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('stream', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='myflix.stream')),
-                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='myflix.user')),
+                ('stream', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='estoque_manutencao.stream')),
+                ('user', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='estoque_manutencao.user')),
             ],
         ),
     ]

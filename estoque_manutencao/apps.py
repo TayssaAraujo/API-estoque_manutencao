@@ -1,12 +1,11 @@
 from django.apps import AppConfig
 
-
-class MyflixConfig(AppConfig):
+class EstoqueManutencaoConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'myflix'
+    name = 'estoque_manutencao'
 
 '''from rest_framework import serializers
-from myflix.models import User, Stream
+from estoque_manutencao.models import User, Stream
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
